@@ -338,13 +338,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
         notificationIntent.putExtra(NOTIFICATION_DETAILS, notificationDetailsJson);
  PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                       context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -369,13 +369,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
         
          PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                       context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -403,13 +403,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
        
          PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                       context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -443,13 +443,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
         notificationIntent.putExtra(NOTIFICATION_DETAILS, notificationDetailsJson);
          PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                       context, notificationDetails.id, notificationIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -1198,13 +1198,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
         
          PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     applicationContext, id, intent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                       applicationContext, id, intent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -1234,13 +1234,13 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
            
                  PendingIntent pendingIntent;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-               pendingIntent = PendingIntent.getBroadcast(
+               pendingIntent = PendingIntent.getActivity(
                     applicationContext, scheduledNotification.id, intent,
                         PendingIntent.FLAG_IMMUTABLE);
             }
             else
             {
-                 pendingIntent = PendingIntent.getBroadcast(
+                 pendingIntent = PendingIntent.getActivity(
                      applicationContext, scheduledNotification.id, intent,
                         PendingIntent.FLAG_UPDATE_CURRENT);
             }
