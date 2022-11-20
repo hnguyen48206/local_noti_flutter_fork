@@ -3,10 +3,8 @@ package com.dexterous.flutterlocalnotifications.models;
 import androidx.annotation.Keep;
 
 @Keep
-public enum IconSource {
+public enum BitmapSource {
   DrawableResource,
-  BitmapFilePath,
-  ContentUri,
-  FlutterBitmapAsset,
+  FilePath,
   ByteArray
 }
