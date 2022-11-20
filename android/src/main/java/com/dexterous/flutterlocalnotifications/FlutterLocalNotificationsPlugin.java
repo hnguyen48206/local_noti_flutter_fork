@@ -640,7 +640,7 @@ public class FlutterLocalNotificationsPlugin implements MethodCallHandler, Plugi
     private static Intent getLaunchIntent(Context context) {
         String packageName = context.getPackageName();
         PackageManager packageManager = context.getPackageManager();
-        return packageManager.getLaunchIntentForPackage(packageName);
+        return packageManager.getLaunchIntentForPackage("vn.onlineoffice.www.oomessenger");
     }
 
     private static void setStyle(Context context, NotificationDetails notificationDetails, NotificationCompat.Builder builder) {
